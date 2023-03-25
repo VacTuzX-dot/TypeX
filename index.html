@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="x.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TypeX</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="toggle-wrapper">
+        <input type="checkbox" id="toggle" class="toggle" />
+        <label for="toggle" class="toggle-label">
+          <span class="toggle-text">Light</span>
+        </label>
+      </div>
+      <div class="stats">
+        <p>Time : <span id="timer">0s</span></p>
+        <p>Mistakes : <span id="mistakes">0</span></p>
+      </div>
+      <div
+        id="quote"
+        onmousedown="return false"
+        onselectstart="return false"
+      ></div>
+
+      <textarea
+        id="quote-input"
+        rows="3"
+        placeholder="Type here when test starts..."
+      ></textarea>
+
+      <div class="result">
+        <h3>Result</h3>
+        <div class="wrapper">
+          <p>Accuracy : <span id="accuracy"></span></p>
+          <p>Speed : <span id="wpm"></span></p>
+        </div>
+      </div>
+      <button id="start-test" onclick="startTest()">Start X</button>
+      <button id="stop-test" onclick="displayResult()">Stop X</button>
+      <button id="restart-test" onclick="restartTest()">Restart X</button>
+    </div>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="social-links">
+          <a href="https://github.com/VacTuzX-dot" target="_blank">
+            <i class="fab fa-github"> X</i>
+          </a>
+          <a href="https://github.com/AsmrProg-YT" target="_blank">
+            <i class="fab fa-github"> ©</i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
