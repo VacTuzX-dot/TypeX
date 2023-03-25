@@ -242,7 +242,7 @@ footer {
   padding: 11px;
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 1);
-  transition: all 0.4s ease-out;
+  transition: 0.4s ease-in;
   bottom: 0;
   width: 100%;
   
@@ -264,15 +264,16 @@ footer {
 }
 
 .social-links a:hover {
+transition: 0.4s ease-in;
   color: rgb(111, 45, 255);
 }
 
 .fab {
-  transition: all 0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 
 .fab:hover {
-  transition: all 0.4s ease-out;
+  transition: 0.4s ease-in;
   transform: translateY(-4px);
 }
 
@@ -280,6 +281,7 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
+  transition: background 0.4s ease-in;
 }
 
 @media only screen and (max-width: 390px) {
