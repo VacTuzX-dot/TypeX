@@ -346,6 +346,12 @@ footer {
   .dark-mode .wrapper {
     font-size:16.5px;
   }
+  .result h3 {
+    font-size: 35px;
+  }
+  .wrapper {
+    font-size:16.5px;
+  }
 }
 @media only screen and (min-width: 550px) {
   .container {
@@ -374,6 +380,12 @@ footer {
     font-size: 40px;
   }
   .dark-mode .wrapper {
+    font-size:20px;
+  }
+  .result h3 {
+    font-size: 40px;
+  }
+  .wrapper {
     font-size:20px;
   }
 }
@@ -407,6 +419,12 @@ footer {
   .dark-mode .wrapper {
     font-size:20px;
   }
+  .result h3 {
+    font-size: 40px;
+  }
+  .wrapper {
+    font-size:20px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -432,18 +450,16 @@ footer {
     font-size: 20px;
     padding: 10px 30px;
   }
-
-  .result h3 {
-    font-size: 40px;
-  }
-
-  .wrapper {
-    font-size: 20px;
-  }
   .dark-mode .result h3 {
     font-size: 50px;
   }
   .dark-mode .wrapper {
+    font-size:25px;
+  }
+  .result h3 {
+    font-size: 50px;
+  }
+  .wrapper {
     font-size:25px;
   }
 }
