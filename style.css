@@ -88,7 +88,7 @@ button:hover {
   margin-bottom: 10px;
   font-size: 50px;
   font-weight: 500;
-  color: #44b267;
+  color: rgba(135, 79, 255, 0.918);
   text-shadow: 0 2.5px 4px rgb(0, 0, 0, 0.4);
 }
 
@@ -216,7 +216,7 @@ body.dark-mode {
   margin-bottom: 10px;
   font-size: 50px;
   font-weight: 500;
-  color: #44b267;
+  color: rgba(135, 79, 255, 0.918);
   text-shadow: 0 3px 4px rgb(0, 0, 0);
   transition: 0.4s ease-in;
 }
@@ -281,7 +281,7 @@ footer {
   transition: background 0.4s ease-in;
 }
 
-@media only screen and (min-width: 350px) {
+@media only screen and (min-width: 300px) {
   .container {
     width: 90%;
     top: 45%;
@@ -309,6 +309,73 @@ footer {
   .toggle-text {
     font-size: 13px;
   }
+  .dark-mode .result h3 {
+    font-size: 30px;
+  }
+  .dark-mode .wrapper {
+    font-size:15px;
+  }
+  
+}
+@media only screen and (min-width: 450px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 45px;
+  }
+
+  .stats {
+    font-size: 19px;
+  }
+
+  #quote {
+    font-size: 20.5px;
+  }
+
+  textarea {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 17px;
+    padding: 10px 20px;
+  }
+  .dark-mode .result h3 {
+    font-size: 35px;
+  }
+  .dark-mode .wrapper {
+    font-size:16.5px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 45px;
+  }
+
+  .stats {
+    font-size: 20px;
+  }
+
+  #quote {
+    font-size: 21.5px;
+  }
+
+  textarea {
+    font-size: 19px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .dark-mode .result h3 {
+    font-size: 40px;
+  }
+  .dark-mode .wrapper {
+    font-size:20px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -334,22 +401,11 @@ footer {
     font-size: 18px;
     padding: 10px 20px;
   }
-
-  .result h3 {
+  .dark-mode .result h3 {
     font-size: 40px;
   }
-
-  .wrapper {
-    font-size: 20px;
-  }
-  .toggle-label {
-    width: 110px;
-  }
-  .toggle:checked + .toggle-label:before {
-    transform: translateX(80px);
-  }
-  .toggle-text {
-    font-size: 17px;
+  .dark-mode .wrapper {
+    font-size:20px;
   }
 }
 
@@ -383,5 +439,11 @@ footer {
 
   .wrapper {
     font-size: 20px;
+  }
+  .dark-mode .result h3 {
+    font-size: 50px;
+  }
+  .dark-mode .wrapper {
+    font-size:25px;
   }
 }
