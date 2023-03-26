@@ -234,19 +234,22 @@ body.dark-mode {
   display: inline-block;
 }
 
-.footer-wrapper {
+footer {
   position: fixed;
+  background-color: #fff;
+  padding: 11px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+  transition: 0.4s ease-in;
   bottom: 0;
-  left: 0;
   width: 100%;
-  max-width: 100%;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 11px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
-  transition: 0.4s ease-in;
 }
 
 .social-links a {
@@ -269,6 +272,7 @@ body.dark-mode {
   transition: 0.4s ease-in;
   transform: translateY(-4px);
 }
+
 
 .dark-mode footer {
   background-color: #333;
