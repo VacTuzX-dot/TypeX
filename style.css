@@ -315,7 +315,12 @@ footer {
   .dark-mode .wrapper {
     font-size:15px;
   }
-  
+  .result h3 {
+    font-size: 30px;
+  }
+  .wrapper {
+    font-size:15px;
+  }
 }
 @media only screen and (min-width: 450px) {
   .container {
