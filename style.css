@@ -162,8 +162,8 @@ button:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 15px;
-  color: rgba(255,255,0,1);
+  font-size: 17px;
+  color: rgba(255, 255, 0, 1);
   text-align: center;
   line-height: 30px;
   transition: opacity 0.2s ease-in-out;
@@ -234,8 +234,6 @@ body.dark-mode {
   display: inline-block;
 }
 
-
-
 footer {
   position: fixed;
   background-color: #fff;
@@ -245,7 +243,6 @@ footer {
   transition: 0.4s ease-in;
   bottom: 0;
   width: 100%;
-  
 }
 
 .footer-wrapper {
@@ -260,11 +257,10 @@ footer {
   color: #666;
   margin: 0 10px;
   text-decoration: none;
-  
 }
 
 .social-links a:hover {
-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
   color: rgb(111, 45, 255);
 }
 
@@ -284,10 +280,12 @@ transition: 0.4s ease-in;
   transition: background 0.4s ease-in;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (min-width: 350px) {
   .container {
-    width: 90vw;
-    padding: 30px 20px;
+    width: 90%;
+    top: 45%;
+    height: auto;
+    padding: 40px 20px;
     font-size: 18px;
   }
   #quote {
@@ -301,35 +299,87 @@ transition: 0.4s ease-in;
     font-size: 16px;
     padding: 10px 20px;
   }
+  .toggle-label {
+    width: 90px;
+  }
+  .toggle:checked + .toggle-label:before {
+    transform: translateX(60px);
+  }
+  .toggle-text {
+    font-size: 13px;
+  }
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     width: 90%;
-    padding: 30px;
+    height: auto;
+    padding: 45px;
   }
-  
+
   .stats {
-    font-size: 18px;
-  }
-  
-  #quote {
     font-size: 20px;
   }
-  
-  textarea {
-    font-size: 18px;
+
+  #quote {
+    font-size: 21.5px;
   }
-  
+
+  textarea {
+    font-size: 19px;
+  }
+
   button {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 20px;
   }
-  
+
   .result h3 {
     font-size: 40px;
   }
-  
+
+  .wrapper {
+    font-size: 20px;
+  }
+  .toggle-label {
+    width: 110px;
+  }
+  .toggle:checked + .toggle-label:before {
+    transform: translateX(80px);
+  }
+  .toggle-text {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 50px;
+  }
+
+  .stats {
+    font-size: 20px;
+  }
+
+  #quote {
+    font-size: 23px;
+  }
+
+  textarea {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  .result h3 {
+    font-size: 40px;
+  }
+
   .wrapper {
     font-size: 20px;
   }
